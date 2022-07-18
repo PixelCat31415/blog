@@ -43,6 +43,7 @@
 
 .post-metadata {
     color: var(--monokai-grey) !important;
+    font-size: 80%;
 }
 
 .post-article {
@@ -73,6 +74,7 @@
 
     .post-article-description {
         margin-left: 30px;
+        font-style: italic;
     }
 
     hr {
@@ -109,6 +111,7 @@
 
 .post-tags {
     margin-left: 30px;
+    font-size: 80%;
 
     span {
         color: var(--monokai-grey);

@@ -57,7 +57,7 @@
 {{- $eurekaCSS := resources.Get "css/eureka.css" | postCSS (dict "config" "./assets/css/postcss.config.js" "inlineImports" true) | resources.ExecuteAsTemplate "css/eureka.css" . | minify | fingerprint "sha384" }}
 <link rel="stylesheet" href="{{ $eurekaCSS.Permalink }}">
 
-{{- $customCSS := resources.Get "css/custom.scss" | resources.ToCSS -}}
+{{- $customCSS := resources.Get "css/custom.scss" | resources.ToCSS | minify | fingerprint -}}
 <link rel="stylesheet" href="{{ $customCSS.Permalink }}">
 
 {{- $eurekaJS := resources.Get "js/eureka.js" | resources.ExecuteAsTemplate "js/eureka.js" . | minify | fingerprint "sha384" }}

@@ -1,6 +1,28 @@
-<div class="my-4 post-tags">
-    <span>Tags:</span>
-    {{ range $index, $value := . }}
-    <a href="{{ .Permalink }}" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 me-2 hover:text-eureka">#{{ .LinkTitle }}</a>
-    {{ end }}
+<div class="post-tags">
+    <div class="mt-4">
+        <span>
+            <i class="fas fa-tags me-1" style="width: 20px;"></i>
+            標籤：
+        </span>
+        {{ with .GetTerms "tags" }}
+            {{ range $index, $value := . }}
+            <a href="{{ .Permalink }}" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 me-2 hover:text-eureka">#{{ .LinkTitle }}</a>
+            {{ end }}
+        {{ else }}
+            <span>（無）</span>
+        {{ end }}
+    </div>
+    <div class="mb-4">
+        <span>
+            <i class="fas fa-th-list me-1" style="width: 20px;"></i>
+            系列：
+        </span>
+        {{ with .GetTerms "series" }}
+            {{ range $index, $value := . }}
+            <a href="{{ .Permalink }}" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 me-2 hover:text-eureka">#{{ .LinkTitle }}</a>
+            {{ end }}
+        {{ else }}
+            <span>（無）</span>
+        {{ end }}
+    </div>
 </div>
