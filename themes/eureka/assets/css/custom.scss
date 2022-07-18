@@ -1,0 +1,117 @@
+:root {
+    --monokai-bg: #272822;
+    --monokai-fg: #F8F8F2;
+    --monokai-grey: #928e7a; // slightly lighter to fit lighter background
+    --monokai-red: #F92672;
+    --monokai-orange: #FD971F;
+    --monokai-light-orange: #E69F66;
+    --monokai-yellow: #FFD866;
+    --monokai-green: #A6E22E;
+    --monokai-blue: #66D9EF;
+    --monokai-purple: #AE81FF;
+}
+
+.post-toc-title {
+    font-size: 1.25em;
+    font-weight: bold;
+    &:before {
+        content: "<";
+        color: var(--monokai-yellow);
+    }
+    &:after {
+        content: ">";
+        color: var(--monokai-yellow);
+    }
+}
+
+.post-toc {
+    font-size: 1.25em !important;
+    ul {
+        font-size: 90%;
+        padding-left: 20px;
+        margin: 5px 0;
+    }
+    ul ul ul ul {
+        font-size: 100%;
+    }
+    li::marker {
+        content: "# ";
+        color: var(--monokai-yellow);
+        font-size: inherit;
+    }
+}
+
+.post-metadata {
+    color: var(--monokai-grey) !important;
+}
+
+.post-article {
+
+    *::before,
+    *::after {
+        display: inline-block;
+        margin: 5px;
+        text-decoration: none;
+        font-weight: bolder;
+        color: var(--monokai-yellow);
+    }
+
+    .post-metadata {
+        margin-left: 30px;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        margin-left: 10px;
+        &:before {
+            content: "<";
+        }
+        &:after {
+            content: ">";
+        }
+    }
+
+    .post-article-description {
+        margin-left: 30px;
+    }
+
+    hr {
+        border: var(--monokai-grey) solid 1px;
+        margin: 10px 20px;
+    }
+
+    .post-article-content {
+
+        h2 {
+            margin-left: 10px;
+        }
+
+        h3, h4 {
+            margin-left: 20px;
+        }
+
+        h5, h6, p, ul, ol, code {
+            margin-left: 30px;
+        }
+
+        h2::before,
+        h3::before,
+        h4::before {
+            content: "#";
+            font-size: 90%;
+        }
+
+        code {
+            margin: 0;
+        }
+    }
+}
+
+.post-tags {
+    margin-left: 30px;
+
+    span {
+        color: var(--monokai-grey);
+        margin: 0 10px;
+    }
+}

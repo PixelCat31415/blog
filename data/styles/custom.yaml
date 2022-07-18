@@ -1,0 +1,24 @@
+# Normal(400), semibold(600), bold(700) font weight needed.
+fonts: 
+  - name: Lora
+    googleFonts: Lora:wght@400;600;700
+  - name: Noto Serif SC
+    googleFonts: Noto+Serif+SC:wght@400;600;700
+
+colors:
+  light:
+    theme: "#38b2ac"
+    primaryBackground: rgba(242, 242, 247, 1)
+    secondaryBackground: rgba(255, 255, 255, 1)
+    tertiaryBackground: rgba(242, 242, 247, 1)
+    primaryText: rgba(0, 0, 0, 0.85)
+    secondaryText: rgba(0, 0, 0, 0.7)
+    tertiaryText: rgba(0, 0, 0, 0.55)
+  dark:
+    theme: "#78DCE8"
+    primaryBackground: rgba(39, 40, 34, 1)  # monokai background
+    secondaryBackground: rgba(49, 50, 44, 1)  # slightly lighter
+    tertiaryBackground: rgba(44, 45, 39, 1)
+    primaryText: rgba(248, 248, 242, 0.85)
+    secondaryText: rgba(248, 248, 242, 0.7)
+    tertiaryText: rgba(248, 248, 242, 0.55)

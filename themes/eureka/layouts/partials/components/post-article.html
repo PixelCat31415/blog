@@ -1,0 +1,23 @@
+<article class="prose post-article">
+    
+  {{ partial "components/post-metadata" . }}
+  
+  <h1 class="mb-4">{{ .Title }}</h1>
+  
+  <p class="post-article-description">
+    {{ if .Description }} {{ .Description | plainify | htmlUnescape }} {{ end }}
+  </p>
+
+  {{ $featured := partial "utils/get-featured" . }}
+  {{ with $featured }}
+    {{ . }}
+  {{ end }}
+
+  <hr>
+
+  <div class="post-article-content">
+    {{ .Content }}
+  </div>
+
+  <hr>
+</article>
