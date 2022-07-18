@@ -45,5 +45,5 @@ taxonomies:
   series: series
   author: authors
 
-# build:
-#   useResourceCacheWhen: never
+build:
+  useResourceCacheWhen: always
