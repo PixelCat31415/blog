@@ -24,3 +24,4 @@ draft: true
 2. github page
    1. set up repo
    2. github action for deployment
+      1. hugo version
