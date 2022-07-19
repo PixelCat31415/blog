@@ -3,7 +3,7 @@ title: Nyanyannya
 
 theme: eureka
 
-paginate: 3
+paginate: 10
 copyright: 
 enableEmoji: true
 enableGitInfo: false
@@ -47,3 +47,4 @@ taxonomies:
 
 build:
   useResourceCacheWhen: always
+  # useResourceCacheWhen: never

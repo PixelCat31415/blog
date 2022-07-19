@@ -13,4 +13,4 @@ featuredImage:
 draft: false
 ---
 
-About!
+(WIP)

@@ -106,6 +106,32 @@
         code {
             margin: 0;
         }
+
+        img {
+            margin: 0 auto;
+        }
+
+        blockquote {
+            margin-left: 30px;  
+        }
+
+        table, th, td {
+            border: 1px solid var(--monokai-fg);
+            border-collapse: collapse;
+        }
+        table {
+            margin: 0 40px;
+            width: auto;
+        }
+        th, td {
+            padding: 8px;
+        }
+
+        .footnotes {
+            li p {
+                margin-left: 0;
+            }
+        }
     }
 }
 

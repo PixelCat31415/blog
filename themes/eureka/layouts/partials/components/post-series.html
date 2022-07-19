@@ -1,4 +1,5 @@
 {{ $series := .Site.Taxonomies.series }}
+{{ $hascontent := false }}
 <div class="bg-secondary-bg prose max-w-none rounded p-6">
   <h3>{{ i18n "seriesOfPosts" }}</h3>
   {{ range (.GetTerms "series") }}
@@ -6,5 +7,10 @@
       <a href="{{ .Permalink }}" class="no-underline">{{ .LinkTitle }}</a>
       <br />
     {{ end }}
+    {{ $hascontent = true }}
   {{ end }}
 </div>
+
+{{ if $hascontent }}
+<div style="height: 30px;"></div>
+{{ end }}
