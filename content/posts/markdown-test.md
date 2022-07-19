@@ -53,9 +53,9 @@ print("我不會數學")
 
 nacho >////<
 
-![nacho neko](https://stickershop.line-scdn.net/stickershop/v1/product/12126860/LINEStorePC/main.png;compress=true)
+![external image](https://stickershop.line-scdn.net/stickershop/v1/product/12126860/LINEStorePC/main.png;compress=true)
 
-![nacho sleeping]({{< img "nacho_sleeping.png" >}})
+![internal image]({{< img "nacho_sleeping.png" >}})
 
 ### 表格
 
