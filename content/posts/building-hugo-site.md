@@ -3,7 +3,7 @@ title: 建立 Hugo Site
 description: 也就是這個 blog owo
 toc: true
 authors: []
-tags: []
+tags: [web, hugo]
 categories: []
 series: []
 date: 2022-07-19T16:44:54+08:00
