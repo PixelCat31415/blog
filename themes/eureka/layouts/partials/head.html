@@ -60,6 +60,9 @@
 {{- $customCSS := resources.Get "css/custom.scss" | resources.ToCSS | minify | fingerprint -}}
 <link rel="stylesheet" href="{{ $customCSS.Permalink }}">
 
+{{- $customJS := resources.Get "js/custom.js" | resources.ExecuteAsTemplate "js/custom.js" . | minify | fingerprint "sha384" }}
+<script defer src="{{ $customJS.Permalink }}"></script>
+
 {{- $eurekaJS := resources.Get "js/eureka.js" | resources.ExecuteAsTemplate "js/eureka.js" . | minify | fingerprint "sha384" }}
 <script defer src="{{ $eurekaJS.Permalink }}"></script>
 

@@ -1,0 +1,8 @@
+{{ $id := printf "%s%d" (delimit (shuffle (seq 0 9)) "") (mod now.UnixNano 1000) }}
+{{ $id_str := printf "spoiler_%s" $id }}
+<div class="spoiler" id={{ print $id_str }}>
+    <button class="spoiler_control" onclick="toggle_spoiler('{{ print $id_str }}')">
+        <span>▼</span>{{ .Get 0 }}
+    </button>
+    <div class="spoiler_content" id={{ print $id_str "_content" }}>
+        <div>

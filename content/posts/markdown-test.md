@@ -7,7 +7,7 @@ tags: [test, markdown]
 categories: []
 series: [test]
 date: 2022-07-19T02:12:24+08:00
-lastmod: 2022-07-19T02:12:24+08:00
+lastmod: 2022-11-20T02:12:24+08:00
 featuredVideo:
 featuredImage:
 draft: false
@@ -94,6 +94,18 @@ text
 ###### h6
 
 text
+
+## 自訂功能
+
+### 展開/隱藏
+
+{{< spoiler/begin "展開！" >}}
+
+喵喵喵
+
+owo!
+
+{{< spoiler/end >}}
 
 <!-- footnotes -->
 [^1]: 第五層和第六層標題長的跟內文一樣
