@@ -1,0 +1,1 @@
+toggle_spoiler=function(e){document.getElementById(e).classList.toggle("visible"),cont=document.getElementById(`${e}_content`),cont.style.maxHeight?cont.style.maxHeight=null:cont.style.maxHeight=cont.scrollHeight+"px"}
