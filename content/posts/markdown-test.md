@@ -21,8 +21,12 @@ draft: false
 
 ### 數學
 
+<!-- note the \cr !!!! -->
 $$
-    e^{i\pi} = -1
+\begin{aligned}
+    e^{i\pi} &= -1 \cr
+             &= \int^{1}_{\frac{1}{2}}\ln x \text{ dx}
+\end{aligned}
 $$
 
 ### 程式碼
@@ -99,13 +103,13 @@ text
 
 ### 展開/隱藏
 
-{{< spoiler/begin "展開！" >}}
+{{% spoiler "展開！" %}}
 
 喵喵喵
 
 owo!
 
-{{< spoiler/end >}}
+{{% /spoiler %}}
 
 <!-- footnotes -->
 [^1]: 第五層和第六層標題長的跟內文一樣
