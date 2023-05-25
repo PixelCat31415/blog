@@ -5,5 +5,5 @@ main:
   - name: Posts
     url: /posts/
     weight: 2
-  - name: Series
-    url: /docs/
+  # - name: Series
+  #   url: /docs/
