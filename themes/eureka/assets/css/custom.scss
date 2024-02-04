@@ -104,9 +104,16 @@
             margin-right: 20px;
         }
 
-        h5, h6, p, ul, ol, code {
+        h5, h6, p, ol, ul, code {
             margin-left: 30px;
             margin-right: 30px;
+        }
+        ol ol, ul ul, ol ul, ul ol {
+            margin-top: 0;
+            margin-left: 0;
+        }
+        li {
+            margin: 0;
         }
 
         h2::before,
