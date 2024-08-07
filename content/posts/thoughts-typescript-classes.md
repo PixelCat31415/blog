@@ -3,7 +3,7 @@ title: 隨筆．關於類別
 description:
 toc: true
 authors: []
-tags: []
+tags: [隨筆]
 categories: []
 series: []
 date: 2024-08-01T22:34:30+08:00
