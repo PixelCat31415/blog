@@ -13,4 +13,5 @@ featuredImage:
 draft: false
 ---
 
-(WIP)
+一個安靜的角落收納深夜零碎的異想。
+
